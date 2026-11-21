@@ -2,8 +2,9 @@
 
     streamlit run frontend/app.py          # or: make ui  /  make demo
 
-The page tells one story, top to bottom:
-  1 raw light curve -> 2 detrended -> 3 periodogram -> 4 folded transit -> 5 verdict -> 6 why.
+Landing: hero, search, demo stars, how it works.
+Result:  header -> 3D model of the system + verdict -> key numbers -> tabs
+         (light curve, finding the repeat, why the model decided this, details).
 """
 
 from __future__ import annotations
@@ -19,7 +20,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from client import FRIENDLY_ERRORS, AnalyzeOptions, Backend, BackendError
 from plots import (
-    CLASS_COLORS,
     CLASS_LABELS,
     PLOT_CONFIG,
     detrended_figure,
@@ -30,8 +30,16 @@ from plots import (
     raw_figure,
     view_saliency_figure,
 )
+from system3d import render_system
+from ui import CSS, badge, hero, how_it_works, section, stat_strip, title_block, verdict_card
 
-st.set_page_config(page_title="Exoplanet Transit Hunter", page_icon="🪐", layout="wide")
+st.set_page_config(
+    page_title="Exoplanet Transit Hunter",
+    page_icon="🪐",
+    layout="wide",
+    initial_sidebar_state="collapsed",
+)
+st.markdown(CSS, unsafe_allow_html=True)
 
 CATEGORY_ICONS = {
     "hot_jupiter": "🪐",
@@ -74,6 +82,14 @@ CAPTIONS: dict[str, tuple[str, str]] = {
         "This is what the AI actually looks at. The bright, big dots show the parts that made "
         "it decide. For a planet, it should be staring at the dip.",
     ),
+    "system3d": (
+        "Rebuilt from the measurement: star color from Teff, companion radius from sqrt(depth), "
+        "orbit from the period and Kepler's third law, tilt from the transit duration. Drag to "
+        "rotate, scroll to zoom.",
+        "We rebuilt the star and the thing orbiting it from the dip we measured. Drag to spin it, "
+        "and press 🔭 to see it the way the telescope does: the dip in the strip below happens "
+        "every time the companion passes in front.",
+    ),
 }
 
 
@@ -86,6 +102,10 @@ def caption(key: str, eli12: bool) -> None:
     st.caption(CAPTIONS[key][1 if eli12 else 0])
 
 
+def html(block: str) -> None:
+    st.markdown(block, unsafe_allow_html=True)
+
+
 def show_error(code: str, message: str) -> None:
     title, hint = FRIENDLY_ERRORS.get(code, FRIENDLY_ERRORS["internal_error"])
     st.error(f"**{title}**  \n{hint}", icon="🔭")
@@ -93,42 +113,12 @@ def show_error(code: str, message: str) -> None:
         st.code(f"{code}: {message}")
 
 
-def badge(flag: dict[str, Any]) -> str:
-    """Vetting badge: status color + icon + text, never color alone."""
-    passed = flag["passed"]
-    if passed is True:
-        icon, color, word = "✓", "#0ca30c", "pass"
-    elif passed is False:
-        icon, color, word = "✗", "#d03b3b", "flag"
-    else:
-        icon, color, word = "–", "#8a897f", "n/a"
-    name = flag["name"].replace("_", " ")
-    return (
-        f'<span title="{flag["message"]}" style="display:inline-block;margin:2px 4px 2px 0;padding:3px 9px;'
-        f'border-radius:12px;border:1px solid {color};color:#f0efec;font-size:0.85rem;">'
-        f'<span style="color:{color};font-weight:700">{icon}</span> {name} <span style="color:#8a897f">({word})</span></span>'
-    )
-
-
-def stat_grid(items: list[tuple[str, str, str]]) -> None:
-    """Compact label/value grid (st.metric truncates long values in narrow columns)."""
-    cells = "".join(
-        f"<div title='{tip}' style='padding:6px 0'><div style='color:#8a897f;font-size:0.8rem'>{label}</div>"
-        f"<div style='color:#f0efec;font-size:1.25rem;font-weight:600'>{value}</div></div>"
-        for label, value, tip in items
-    )
-    st.markdown(
-        f"<div style='display:grid;grid-template-columns:repeat(3,1fr);gap:4px 16px'>{cells}</div>",
-        unsafe_allow_html=True,
-    )
-
-
 def run_analysis(target: str, opts: AnalyzeOptions) -> None:
     backend = get_backend()
     bar = st.progress(0.0, text=f"Starting analysis of {target}…")
 
     def progress(stage: str, frac: float) -> None:
-        bar.progress(min(max(frac, 0.0), 1.0), text=f"{target}: {stage}…")
+        bar.progress(min(max(frac, 0.0), 1.0), text=f"🔭 {target}: {stage}…")
 
     try:
         result = backend.analyze(target, opts, progress)
@@ -145,7 +135,7 @@ def run_analysis(target: str, opts: AnalyzeOptions) -> None:
 
 # ------------------------------------------------------------------------------- sidebar
 with st.sidebar:
-    st.markdown("### Settings")
+    st.markdown("### ⚙️ Settings")
     eli12 = st.toggle(
         "🧒 Explain like I'm 12", value=False, help="Plain-language captions and verdicts."
     )
@@ -183,38 +173,34 @@ opts = AnalyzeOptions(
 )
 
 # ------------------------------------------------------------------------------- header + search
-st.markdown("# 🪐 Exoplanet Transit Hunter")
-st.markdown(
-    "Type a star. We download its brightness measurements from NASA's Kepler or TESS mission, "
-    "look for dips that repeat like clockwork, and let a neural network decide: "
-    "**planet**, **two stars eclipsing each other**, or **false alarm**."
-)
+html(hero())
 
 with st.form("search", clear_on_submit=False, border=False):
-    c1, c2 = st.columns([5, 1])
+    c1, c2 = st.columns([6, 1])
     query = c1.text_input(
         "Star",
-        placeholder="Kepler-10, KIC 11904151, TIC 261136679, Pi Mensae…",
+        placeholder="🔎  Search a star: Kepler-10, KIC 11904151, TIC 261136679, Pi Mensae…",
         label_visibility="collapsed",
     )
-    submitted = c2.form_submit_button("Analyze", type="primary", use_container_width=True)
+    submitted = c2.form_submit_button("Analyze 🚀", type="primary", use_container_width=True)
 if submitted and query.strip():
     run_analysis(query.strip(), opts)
 
 demos = get_backend().demo_targets()
 if demos:
-    st.markdown("**Try a demo star** (works offline):")
+    st.caption("✨ **Try a demo star** · instant, works offline · settings are in the ☰ sidebar")
     cols = st.columns(min(len(demos), 6))
     for i, d in enumerate(demos[:6]):
         icon = CATEGORY_ICONS.get(d.get("category", ""), "✨")
-        if cols[i].button(
-            f"{icon} {d['title']}",
-            key=f"demo_{d['slug']}",
-            help=d.get("blurb", ""),
-            use_container_width=True,
-        ):
-            # Demo buttons always use the cached result (default options).
-            run_analysis(d["slug"], AnalyzeOptions())
+        with cols[i]:
+            if st.button(
+                f"{icon} {d['title']}",
+                key=f"demo_{d['slug']}",
+                help=d.get("blurb", ""),
+                use_container_width=True,
+            ):
+                # Demo buttons always use the cached result (default options).
+                run_analysis(d["slug"], AnalyzeOptions())
 else:
     st.info("No demo stars cached yet. Run `make warm-cache` (needs internet once).", icon="💡")
 
@@ -223,52 +209,40 @@ if st.session_state.get("error"):
 
 result: dict[str, Any] | None = st.session_state.get("result")
 if result is None:
-    st.divider()
-    a, b, c = st.columns(3)
-    a.markdown(
-        "#### 1 · Watch the star\nKepler and TESS measured the brightness of hundreds of thousands of stars every few minutes for months or years."
-    )
-    b.markdown(
-        "#### 2 · Find the repeat\nA planet passing in front of its star causes the same small dip again and again. Box Least Squares finds that rhythm."
-    )
-    c.markdown(
-        "#### 3 · Ask the AI\nA neural network trained on Kepler and TESS signals labeled by astronomers decides what caused the dip, and shows you why."
-    )
+    html(section("How it works", "From starlight to a verdict in four steps"))
+    for col, card in zip(st.columns(4), how_it_works(), strict=True):
+        with col:
+            html(card)
     st.stop()
 
 # ------------------------------------------------------------------------------- result header
 lc = result["lightcurve"]
 title = result.get("name") or result["target_id"]
-st.divider()
-meta = [result["target_id"], lc["mission"]] + (
-    [lc["author"]] if lc["author"] != lc["mission"] else []
-)
-st.markdown(
-    f"## {title}  <span style='color:#8a897f;font-size:1rem'>{' · '.join(meta)}</span>",
-    unsafe_allow_html=True,
-)
-m = st.columns(5)
-m[0].metric("Observations", f"{lc['n_points']:,}")
-m[1].metric("Time span", f"{lc['baseline_days']:.0f} days")
-m[2].metric("Quarters / sectors", len(lc["segments"]))
-radius = result["stellar"].get("radius")
-m[3].metric("Star radius", f"{radius:.2f} R☉" if radius else "unknown")
-m[4].metric("Signals found", sum(c["significant"] for c in result["candidates"]))
 src = {
     "demo_cache": "📦 demo cache",
     "cache": "⚡ cached result",
     "computed": f"⏱ computed in {result['timings_s'].get('total', 0):.1f}s",
 }
-st.caption(
-    f"{src.get(result.get('source', 'computed'), '')} · pipeline {result['pipeline_version']}"
-)
+chips = ([result["target_id"]] if result["target_id"] != title else []) + [f"🛰️ {lc['mission']}"]
+if lc["author"] != lc["mission"]:
+    chips.append(lc["author"])
+chips += [
+    f"{lc['n_points']:,} measurements",
+    f"{lc['baseline_days']:.0f} days observed",
+    f"{len(lc['segments'])} quarters/sectors",
+    src.get(result.get("source", "computed"), "computed"),
+]
+st.divider()
+html(title_block(title, chips))
 for w in result.get("warnings", []):
     st.warning(w, icon="⚠️")
 
 cands = result["candidates"]
 if len(cands) > 1:
     labels = [
-        f"Signal {c['rank']}: P = {c['period']:.4f} d" + ("" if c["significant"] else " (weak)")
+        f"Signal {c['rank']} · every {c['period']:.4f} d"
+        + (f" · {CLASS_LABELS[c['predicted_class']]}" if c.get("predicted_class") else "")
+        + ("" if c["significant"] else " (weak)")
         for c in cands
     ]
     idx = st.radio(
@@ -284,146 +258,166 @@ else:
     idx = 0
 cand = cands[idx]
 
-# ------------------------------------------------------------------------------- steps 1-4
-st.markdown("### ① Raw light curve")
-caption("raw", eli12)
-st.plotly_chart(raw_figure(result), use_container_width=True, config=PLOT_CONFIG)
-
-st.markdown("### ② Detrended light curve")
-caption("detrended", eli12)
-st.plotly_chart(
-    detrended_figure(result, cand if cand["significant"] else None),
-    use_container_width=True,
-    config=PLOT_CONFIG,
-)
-
-left, right = st.columns(2)
+# ------------------------------------------------------------------------------- 3D + verdict
+left, right = st.columns([3, 2], gap="medium")
 with left:
-    st.markdown("### ③ Search for a repeat")
-    caption("periodogram", eli12)
-    st.plotly_chart(periodogram_figure(cand), use_container_width=True, config=PLOT_CONFIG)
+    html(section("The system", "Meet the system in 3D"))
+    caption("system3d", eli12)
+    render_system(result, cand if cand["significant"] else None, height=520)
 with right:
-    st.markdown("### ④ Folded transit")
-    caption("folded", eli12)
-    st.plotly_chart(folded_figure(cand), use_container_width=True, config=PLOT_CONFIG)
-
-# ------------------------------------------------------------------------------- step 5: verdict
-st.markdown("### ⑤ Verdict")
-v1, v2 = st.columns([3, 2])
-with v1:
-    pred = cand.get("predicted_class")
-    if not cand["significant"]:
-        st.markdown("#### No significant signal")
-        st.caption(
-            f"Best attempt: SNR {cand['snr']:.1f} (threshold 7.1). Treat any prediction below with caution."
-        )
-    if pred:
-        color = CLASS_COLORS[pred]
-        st.markdown(
-            f"<div style='border-left:6px solid {color};padding:6px 14px;margin:4px 0 10px 0;'>"
-            f"<div style='font-size:1.6rem;font-weight:700;color:#f0efec'>{CLASS_LABELS[pred]}</div>"
-            f"<div style='color:#c3c2b7'>{cand['confidence']:.0%} confident</div></div>",
-            unsafe_allow_html=True,
-        )
+    html(section("The answer", "What is it?"))
+    html(verdict_card(cand))
+    if cand.get("predicted_class"):
         st.plotly_chart(probability_figure(cand), use_container_width=True, config=PLOT_CONFIG)
-    else:
-        st.info("No trained model loaded. Showing search and vetting results only.", icon="🧪")
-    st.markdown("**Vetting checks**", help="Hover a badge for details.")
-    st.markdown("".join(badge(f) for f in cand["vetting_flags"]), unsafe_allow_html=True)
-with v2:
+    st.markdown("**Vetting checks**", help="Classic astronomer tests. Hover a badge for details.")
+    html("".join(badge(f) for f in cand["vetting_flags"]))
     st.markdown("**What it means**")
     if eli12:
         st.markdown(cand["explanation"]["eli12"])
     else:
         for line in cand["explanation"]["technical"]:
             st.markdown(f"- {line}")
-    phys = cand["physical"]
-    st.markdown("**Signal**")
-    rp = phys.get("planet_radius_rearth")
-    rj = phys.get("planet_radius_rjup")
-    stat_grid(
+
+phys = cand["physical"]
+rp = phys.get("planet_radius_rearth")
+rj = phys.get("planet_radius_rjup")
+radius = result["stellar"].get("radius")
+html(
+    stat_strip(
         [
-            ("Period", f"{cand['period']:.4f} d", "time between dips"),
-            ("Duration", f"{cand['duration_hours']:.2f} h", "how long each dip lasts"),
-            (
-                "Depth",
-                f"{cand['depth_ppm']:,.0f} ppm",
-                "parts per million of the star's light blocked",
-            ),
-            ("SNR", f"{cand['snr']:.1f}", "signal-to-noise ratio; 7.1 is the detection threshold"),
-            ("Transits seen", f"{cand['n_transits']}", "individual dips with data"),
+            ("Repeats every", f"{cand['period']:.4f} d", "time between dips"),
+            ("Dip lasts", f"{cand['duration_hours']:.2f} h", "transit duration"),
+            ("Dip depth", f"{cand['depth_ppm']:,.0f} ppm", "parts per million of light blocked"),
+            ("Signal strength", f"SNR {cand['snr']:.1f}", "7.1 is the detection threshold"),
             (
                 "Size if a planet",
-                f"{rp:.1f} Earths" if rp else "—",
+                f"{rp:.1f} × Earth" if rp else "—",
                 f"{rj:.2f} Jupiter radii" if rj else "needs the star's radius",
+            ),
+            (
+                "Host star",
+                f"{radius:.2f} × Sun" if radius else "unknown",
+                f"{cand['n_transits']} transits seen",
             ),
         ]
     )
-    st.caption(
-        f"Mid-transit (BJD): {cand['t0_bjd']:.5f}. A candidate needs follow-up observations to be confirmed as a planet."
-    )
+)
 
-# ------------------------------------------------------------------------------- step 6: why
-st.markdown("### ⑥ Why the model decided this")
-caption("views", eli12)
-sal = cand.get("saliency") or {}
-w1, w2 = st.columns(2)
-with w1:
+# ------------------------------------------------------------------------------- tabs
+t1, t2, t3, t4 = st.tabs(
+    ["📈 Light curve", "🔁 Finding the repeat", "🧠 Why the AI decided", "📋 Details & download"]
+)
+with t1:
+    st.markdown("### ① Raw light curve")
+    caption("raw", eli12)
+    st.plotly_chart(raw_figure(result), use_container_width=True, config=PLOT_CONFIG)
+    st.markdown("### ② Detrended light curve")
+    caption("detrended", eli12)
     st.plotly_chart(
-        view_saliency_figure(
-            cand["plot_data"]["local_view"],
-            sal.get("local_view"),
-            "Local view: the transit up close",
-            "Hours from mid-transit",
-        ),
+        detrended_figure(result, cand if cand["significant"] else None),
         use_container_width=True,
         config=PLOT_CONFIG,
     )
-with w2:
-    st.plotly_chart(
-        view_saliency_figure(
-            cand["plot_data"]["global_view"],
-            sal.get("global_view") or None,
-            "Global view: the whole orbit",
-            "Days from mid-transit",
-        ),
-        use_container_width=True,
-        config=PLOT_CONFIG,
-    )
-if sal.get("features"):
-    f1, f2 = st.columns([3, 2])
-    with f1:
+with t2:
+    a, b = st.columns(2)
+    with a:
+        st.markdown("### ③ Search for a repeat")
+        caption("periodogram", eli12)
+        st.plotly_chart(periodogram_figure(cand), use_container_width=True, config=PLOT_CONFIG)
+    with b:
+        st.markdown("### ④ Folded transit")
+        caption("folded", eli12)
+        st.plotly_chart(folded_figure(cand), use_container_width=True, config=PLOT_CONFIG)
+with t3:
+    st.markdown("### ⑥ Why the model decided this")
+    caption("views", eli12)
+    sal = cand.get("saliency") or {}
+    w1, w2 = st.columns(2)
+    with w1:
         st.plotly_chart(
-            feature_attribution_figure(sal["features"]),
+            view_saliency_figure(
+                cand["plot_data"]["local_view"],
+                sal.get("local_view"),
+                "Local view: the transit up close",
+                "Hours from mid-transit",
+            ),
             use_container_width=True,
             config=PLOT_CONFIG,
         )
-    with f2:
-        st.caption(
-            f"Method: {sal.get('method', '').replace('_', ' ')}, explaining the "
-            f"“{CLASS_LABELS.get(sal.get('target_class', ''), '')}” score. "
-            + (
-                "Blue bars made the model more sure; red bars made it less sure."
-                if eli12
-                else "Signed attributions toward the predicted class (scalar inputs)."
-            )
+    with w2:
+        st.plotly_chart(
+            view_saliency_figure(
+                cand["plot_data"]["global_view"],
+                sal.get("global_view") or None,
+                "Global view: the whole orbit",
+                "Days from mid-transit",
+            ),
+            use_container_width=True,
+            config=PLOT_CONFIG,
         )
-        with st.expander("Table view"):
-            rows = sorted(sal["features"].items(), key=lambda kv: -abs(kv[1]))
-            st.dataframe(
-                {"feature": [k for k, _ in rows], "attribution": [round(v, 4) for _, v in rows]},
-                hide_index=True,
+    if sal.get("features"):
+        f1, f2 = st.columns([3, 2])
+        with f1:
+            st.plotly_chart(
+                feature_attribution_figure(sal["features"]),
                 use_container_width=True,
+                config=PLOT_CONFIG,
             )
+        with f2:
+            st.caption(
+                f"Method: {sal.get('method', '').replace('_', ' ')}, explaining the "
+                f"“{CLASS_LABELS.get(sal.get('target_class', ''), '')}” score. "
+                + (
+                    "Blue bars made the model more sure; red bars made it less sure."
+                    if eli12
+                    else "Signed attributions toward the predicted class (scalar inputs)."
+                )
+            )
+            with st.expander("Table view"):
+                rows = sorted(sal["features"].items(), key=lambda kv: -abs(kv[1]))
+                st.dataframe(
+                    {
+                        "feature": [k for k, _ in rows],
+                        "attribution": [round(v, 4) for _, v in rows],
+                    },
+                    hide_index=True,
+                    use_container_width=True,
+                )
+    else:
+        st.info("No explanation available for this signal.", icon="🧪")
+with t4:
+    d1, d2 = st.columns(2)
+    with d1:
+        st.markdown("**Measurement**")
+        st.markdown(
+            f"- Mid-transit (BJD): `{cand['t0_bjd']:.5f}`\n"
+            f"- Period: `{cand['period']:.6f}` d · duration `{cand['duration_hours']:.3f}` h\n"
+            f"- Depth: `{cand['depth_ppm']:,.1f}` ppm · SNR `{cand['snr']:.1f}` · SDE `{cand['sde']:.1f}`\n"
+            f"- Transits with data: `{cand['n_transits']}`"
+        )
+        if phys.get("fit_depth_ppm"):
+            st.markdown(
+                f"- Trapezoid fit: depth `{phys['fit_depth_ppm']:,.1f}` ppm, "
+                f"duration `{phys.get('fit_duration_hours') or 0:.3f}` h, "
+                f"ingress fraction `{phys.get('fit_ingress_fraction') or 0:.2f}`"
+            )
+    with d2:
+        st.markdown("**Data & model**")
+        st.markdown(
+            f"- Mission: `{lc['mission']}` · pipeline `{result['pipeline_version']}`\n"
+            f"- Measurements: `{lc['n_points']:,}` over `{lc['baseline_days']:.1f}` days\n"
+            f"- Model: `{(result.get('model') or {}).get('kind') or 'none'}`"
+        )
+    st.download_button(
+        "⬇️ Download full result (JSON)",
+        json.dumps(result),
+        file_name=f"{result['target_id'].replace(' ', '_')}.json",
+        mime="application/json",
+    )
 
 st.divider()
-st.download_button(
-    "Download full result (JSON)",
-    json.dumps(result),
-    file_name=f"{result['target_id'].replace(' ', '_')}.json",
-    mime="application/json",
-)
 st.caption(
-    "Data: NASA MAST (Kepler, TESS) via lightkurve; labels: NASA Exoplanet Archive. "
-    "This tool flags candidates for follow-up. It does not confirm planets."
+    "Data: NASA MAST (Kepler, TESS) via lightkurve; labels: NASA Exoplanet Archive and the "
+    "Prša et al. 2022 TESS eclipsing-binary catalog. This tool flags candidates for follow-up. "
+    "It does not confirm planets."
 )

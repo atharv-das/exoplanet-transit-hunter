@@ -123,3 +123,55 @@ def test_app_renders_landing_and_result(
     at.toggle[0].set_value(True)
     at.run()
     assert not at.exception
+
+
+def test_system3d_params_match_known_planet() -> None:
+    """Pi Mensae c: a/R* ~ 13, i ~ 87-88 deg, Teq ~ 1170 K (Huang et al. 2018)."""
+    from system3d import scene_html, system_params, teff_to_hex
+
+    res = {
+        "target_id": "TIC 261136679",
+        "name": "Pi Mensae",
+        "lightcurve": {"mission": "TESS"},
+        "stellar": {"radius": 1.10, "teff": 6037, "mass": 1.09},
+    }
+    cand = {
+        "significant": True,
+        "period": 6.268,
+        "duration_hours": 2.9,
+        "depth_ppm": 290,
+        "predicted_class": "PC",
+        "confidence": 0.92,
+        "physical": {"planet_radius_rearth": 2.04},
+    }
+    p = system_params(res, cand)
+    c = p["companion"]
+    assert c["kind"] == "planet" and c["label"] == "sub-Neptune"
+    assert 12 < c["a_over_r"] < 15
+    assert 86 < c["inclination_deg"] < 89.5
+    assert 1050 < c["teq_k"] < 1300
+    assert p["star"]["spectral_type"] == "F" and not p["assumed"]
+    # Hot stars are blue-white, cool stars orange-red.
+    assert teff_to_hex(3200)[1:3] == "ff" and int(teff_to_hex(3200)[5:7], 16) < 0x90
+    assert teff_to_hex(15000)[5:7] == "ff"
+    page = scene_html(p)
+    assert "WebGLRenderer" in page and '"Pi Mensae"' in page
+
+
+def test_system3d_eb_and_missing_values() -> None:
+    from system3d import system_params
+
+    res = {"target_id": "KIC 1", "stellar": {"radius": None, "teff": None, "mass": None}}
+    eb = {
+        "significant": True,
+        "period": 1.81,
+        "duration_hours": 4.6,
+        "depth_ppm": 655630,
+        "predicted_class": "EB",
+        "physical": {},
+    }
+    p = system_params(res, eb)
+    assert p["companion"]["kind"] == "star"
+    assert set(p["assumed"]) == {"radius", "teff", "mass"}
+    assert system_params(res, dict(eb, significant=False))["companion"] is None
+    assert system_params(res, None)["companion"] is None
