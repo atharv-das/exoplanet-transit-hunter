@@ -126,10 +126,10 @@ See the [model card](docs/MODEL_CARD.md) and [data card](docs/DATA_CARD.md).
 
 | Name | Role |
 |---|---|
-| _name_ | ML: models, training, evaluation |
-| _name_ | Data: labels, dataset, demo stars |
-| _name_ | Backend: pipeline, API, integration |
-| _name_ | Frontend, docs, pitch |
+| Atharv Das| ML: models, training, evaluation |
+| Anshumant| Data: labels, dataset, demo stars |
+| Shubh Agarwal| Backend: pipeline, API, integration |
+| Jigar Singh Chandel| Frontend, docs, pitch |
 
 ## Acknowledgements
 
