@@ -1,0 +1,53 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Exoplanet Transit Hunter & Light-Curve Classifier"
+version: 0.1.0
+date-released: 2026-11-21
+license: MIT
+authors:
+  - name: "Transit Hunter Team"
+repository-code: "https://github.com/<your-org>/exoplanet-transit-hunter"
+keywords:
+  - exoplanets
+  - transit photometry
+  - Kepler
+  - TESS
+  - box least squares
+  - deep learning
+references:
+  - type: article
+    authors:
+      - family-names: Shallue
+        given-names: Christopher J.
+      - family-names: Vanderburg
+        given-names: Andrew
+    title: "Identifying Exoplanets with Deep Learning: A Five-planet Resonant Chain around Kepler-80 and an Eighth Planet around Kepler-90"
+    journal: "The Astronomical Journal"
+    volume: 155
+    issue: 2
+    start: 94
+    year: 2018
+    doi: "10.3847/1538-3881/aa9e09"
+  - type: article
+    authors:
+      - family-names: Hippke
+        given-names: Michael
+      - family-names: David
+        given-names: Trevor J.
+      - family-names: Mulders
+        given-names: Gijs D.
+      - family-names: Heller
+        given-names: René
+    title: "Wōtan: Comprehensive Time-series Detrending in Python"
+    journal: "The Astronomical Journal"
+    volume: 158
+    issue: 4
+    start: 143
+    year: 2019
+    doi: "10.3847/1538-3881/ab3984"
+  - type: software
+    authors:
+      - name: "Lightkurve Collaboration"
+    title: "Lightkurve: Kepler and TESS time series analysis in Python"
+    year: 2018
+    url: "https://github.com/lightkurve/lightkurve"

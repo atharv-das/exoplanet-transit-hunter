@@ -1,0 +1,59 @@
+# Demo stars shown as "Try a demo star" buttons. `make warm-cache` analyzes each one and stores the
+# full result in data/demo_cache/, so the demo works with no internet.
+#
+# `query` goes to MAST's name resolver. Entries with `auto:` are picked from the KOI label table at
+# warm-up time (highest-SNR signal matching the rule), so no catalog IDs are hard-coded from memory.
+targets:
+  - slug: kepler-10
+    title: Kepler-10
+    query: Kepler-10
+    mission: Kepler
+    category: small_multi
+    blurb: First rocky planet found by Kepler (b, 0.84 d), plus a long-period sibling (c, 45 d).
+    max_segments: 8
+
+  - slug: kepler-7
+    title: Kepler-7
+    query: Kepler-7
+    mission: Kepler
+    category: hot_jupiter
+    blurb: Puffy hot Jupiter on a 4.9-day orbit. A deep, clean, textbook transit.
+    max_segments: 6
+
+  - slug: wasp-18
+    title: WASP-18 (TESS)
+    query: WASP-18
+    mission: TESS
+    category: hot_jupiter_tess
+    blurb: Massive hot Jupiter on a 0.94-day orbit, seen by TESS (out of the Kepler training domain).
+    max_segments: 2
+
+  - slug: pi-mensae
+    title: Pi Mensae (TESS)
+    query: Pi Mensae
+    mission: TESS
+    category: small_tess
+    blurb: TESS's first announced planet, a super-Earth (6.3 d). A shallow, hard signal.
+    max_segments: 3
+
+  - slug: kepler-eb
+    title: Known eclipsing binary
+    mission: Kepler
+    category: eclipsing_binary
+    blurb: Kepler false positive flagged as a stellar eclipse. Two stars, not a planet.
+    max_segments: 6
+    auto:
+      label: EB
+      period_range: [1.0, 10.0]
+      min_catalog_depth_ppm: 5000
+
+  - slug: kepler-noisy-fp
+    title: Noisy false positive
+    mission: Kepler
+    category: false_positive
+    blurb: Kepler signal rejected as not transit-like. Instrument noise, not an orbiting body.
+    max_segments: 6
+    auto:
+      label: FP
+      period_range: [1.0, 20.0]
+      require_flag: koi_fpflag_nt

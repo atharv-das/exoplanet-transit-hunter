@@ -1,0 +1,24 @@
+# LightGBM baseline on hand-engineered features. Validated by transit_hunter.config.GBMConfig.
+seed: 42
+num_classes: 3
+
+# Feature groups computed by transit_hunter.processing.features.
+use_scalar_features: true    # period, duration, depth, SNR, odd/even, secondary, shape...
+use_view_summaries: true     # coarse-binned local view + global view statistics
+
+params:
+  objective: multiclass
+  learning_rate: 0.05
+  n_estimators: 1000
+  num_leaves: 31
+  min_child_samples: 10
+  subsample: 0.8
+  subsample_freq: 1
+  colsample_bytree: 0.8
+  reg_lambda: 1.0
+  class_weight: balanced
+  n_jobs: -1
+  verbose: -1
+
+early_stopping_rounds: 50
+output_dir: models/gbm

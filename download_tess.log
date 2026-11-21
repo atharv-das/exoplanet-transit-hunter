@@ -1,0 +1,694 @@
+nohup: ignoring input
+18:13:30 INFO    transit_hunter.data.build: 200 stars selected, 60 already done, 140 to download
+download TESS:   0%|          | 0/140 [00:00<?, ?it/s]/home/atharv/exoplanet-transit-hunter/.venv/lib/python3.11/site-packages/lightkurve/prf/__init__.py:7: UserWarning: Warning: the tpfmodel submodule is not available without oktopus installed, which requires a current version of autograd. See #1452 for details.
+  warnings.warn(
+/home/atharv/exoplanet-transit-hunter/.venv/lib/python3.11/site-packages/lightkurve/prf/__init__.py:7: UserWarning: Warning: the tpfmodel submodule is not available without oktopus installed, which requires a current version of autograd. See #1452 for details.
+  warnings.warn(
+/home/atharv/exoplanet-transit-hunter/.venv/lib/python3.11/site-packages/lightkurve/prf/__init__.py:7: UserWarning: Warning: the tpfmodel submodule is not available without oktopus installed, which requires a current version of autograd. See #1452 for details.
+  warnings.warn(
+/home/atharv/exoplanet-transit-hunter/.venv/lib/python3.11/site-packages/lightkurve/prf/__init__.py:7: UserWarning: Warning: the tpfmodel submodule is not available without oktopus installed, which requires a current version of autograd. See #1452 for details.
+  warnings.warn(
+/home/atharv/exoplanet-transit-hunter/.venv/lib/python3.11/site-packages/lightkurve/prf/__init__.py:7: UserWarning: Warning: the tpfmodel submodule is not available without oktopus installed, which requires a current version of autograd. See #1452 for details.
+  warnings.warn(
+/home/atharv/exoplanet-transit-hunter/.venv/lib/python3.11/site-packages/lightkurve/prf/__init__.py:7: UserWarning: Warning: the tpfmodel submodule is not available without oktopus installed, which requires a current version of autograd. See #1452 for details.
+  warnings.warn(
+2% (397/17337) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:13:59 INFO    lightkurve.utils: 2% (397/17337) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+10% (1747/17327) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:13:59 INFO    lightkurve.utils: 10% (1747/17327) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+5% (985/19261) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:05 INFO    lightkurve.utils: 5% (985/19261) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+2% (399/17337) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:07 INFO    lightkurve.utils: 2% (399/17337) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:07 INFO    transit_hunter.data.fetch: fetched TIC 105801221 (TESS SPOC): 15866 points, 1 segments
+download TESS:   1%|          | 1/140 [00:36<1:25:42, 36.99s/it]14% (2557/18680) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:09 INFO    lightkurve.utils: 14% (2557/18680) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:09 INFO    transit_hunter.data.fetch: fetched TIC 122695048 (TESS SPOC): 23122 points, 2 segments
+download TESS:   1%|▏         | 2/140 [00:39<37:50, 16.46s/it]  2% (299/18655) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:10 INFO    lightkurve.utils: 2% (299/18655) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:10 INFO    transit_hunter.data.fetch: fetched TIC 106309554 (TESS SPOC): 34224 points, 2 segments
+download TESS:   2%|▏         | 3/140 [00:39<21:09,  9.26s/it]0% (52/18462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:13 INFO    lightkurve.utils: 0% (52/18462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (28/18810) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:14 INFO    lightkurve.utils: 0% (28/18810) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+16% (3145/19536) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:15 INFO    lightkurve.utils: 16% (3145/19536) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:15 INFO    transit_hunter.data.fetch: fetched TIC 126637765 (TESS SPOC): 31438 points, 2 segments
+download TESS:   3%|▎         | 4/140 [00:44<17:22,  7.66s/it]0% (29/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:22 INFO    lightkurve.utils: 0% (29/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:22 INFO    transit_hunter.data.fetch: fetched TIC 123357034 (TESS SPOC): 34683 points, 2 segments
+download TESS:   4%|▎         | 5/140 [00:51<16:40,  7.41s/it]0% (42/18597) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:24 INFO    lightkurve.utils: 0% (42/18597) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:24 INFO    transit_hunter.data.fetch: fetched TIC 123042728 (TESS SPOC): 34075 points, 2 segments
+download TESS:   4%|▍         | 6/140 [00:53<12:18,  5.51s/it]0% (23/17327) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:28 INFO    lightkurve.utils: 0% (23/17327) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (41/18064) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:29 INFO    lightkurve.utils: 0% (41/18064) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+2% (400/18699) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:30 INFO    lightkurve.utils: 2% (400/18699) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (18/19091) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:34 INFO    lightkurve.utils: 0% (18/19091) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:34 INFO    transit_hunter.data.fetch: fetched TIC 137157546 (TESS SPOC): 30804 points, 2 segments
+download TESS:   5%|▌         | 7/140 [01:04<15:49,  7.14s/it]1% (117/19550) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:36 INFO    lightkurve.utils: 1% (117/19550) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:36 INFO    transit_hunter.data.fetch: fetched TIC 131743355 (TESS SPOC): 36717 points, 2 segments
+download TESS:   6%|▌         | 8/140 [01:06<12:12,  5.55s/it]8% (1442/18098) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:38 INFO    lightkurve.utils: 8% (1442/18098) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:38 INFO    transit_hunter.data.fetch: fetched TIC 13068361 (TESS SPOC): 33133 points, 2 segments
+download TESS:   6%|▋         | 9/140 [01:07<09:17,  4.26s/it]0% (22/18810) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:42 INFO    lightkurve.utils: 0% (22/18810) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (23/19496) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:49 INFO    lightkurve.utils: 0% (23/19496) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:49 INFO    transit_hunter.data.fetch: fetched TIC 138361973 (TESS SPOC): 36788 points, 2 segments
+download TESS:   7%|▋         | 10/140 [01:19<14:03,  6.49s/it]0% (22/19496) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:51 INFO    lightkurve.utils: 0% (22/19496) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+13% (2597/19462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:52 INFO    lightkurve.utils: 13% (2597/19462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (197/18807) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:54 INFO    lightkurve.utils: 1% (197/18807) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+7% (1264/18197) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:14:59 INFO    lightkurve.utils: 7% (1264/18197) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+Warning: 23% (4128/18307) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:02 WARNING lightkurve.utils: Warning: 23% (4128/18307) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:02 INFO    transit_hunter.data.fetch: fetched TIC 144276942 (TESS SPOC): 27622 points, 2 segments
+download TESS:   8%|▊         | 11/140 [01:32<18:05,  8.41s/it]0% (52/18462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:02 INFO    lightkurve.utils: 0% (52/18462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:02 INFO    transit_hunter.data.fetch: fetched TIC 137310514 (TESS SPOC): 36235 points, 2 segments
+download TESS:   9%|▊         | 12/140 [01:32<12:38,  5.93s/it]1% (430/38316) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:02 INFO    lightkurve.utils: 1% (430/38316) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (28/18348) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:06 INFO    lightkurve.utils: 0% (28/18348) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:06 INFO    transit_hunter.data.fetch: fetched TIC 148963419 (TESS SPOC): 34108 points, 2 segments
+download TESS:   9%|▉         | 13/140 [01:36<11:26,  5.41s/it]0% (30/16779) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:10 INFO    lightkurve.utils: 0% (30/16779) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (119/17395) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:15 INFO    lightkurve.utils: 1% (119/17395) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:15 INFO    transit_hunter.data.fetch: fetched TIC 147660201 (TESS SPOC): 28914 points, 2 segments
+download TESS:  10%|█         | 14/140 [01:45<13:39,  6.51s/it]0% (121/40278) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:17 INFO    lightkurve.utils: 0% (121/40278) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:17 INFO    transit_hunter.data.fetch: fetched TIC 149603524 (TESS SPOC): 57290 points, 2 segments
+download TESS:  11%|█         | 15/140 [01:46<10:17,  4.94s/it]0% (31/17336) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:20 INFO    lightkurve.utils: 0% (31/17336) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:20 INFO    transit_hunter.data.fetch: fetched TIC 159244568 (TESS SPOC): 34054 points, 2 segments
+download TESS:  11%|█▏        | 16/140 [01:50<09:26,  4.57s/it]0% (22/19091) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:23 INFO    lightkurve.utils: 0% (22/19091) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+2% (278/17300) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:25 INFO    lightkurve.utils: 2% (278/17300) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+2% (281/17971) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:29 INFO    lightkurve.utils: 2% (281/17971) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:29 INFO    transit_hunter.data.fetch: fetched TIC 161570793 (TESS SPOC): 17193 points, 1 segments
+download TESS:  12%|█▏        | 17/140 [01:59<11:44,  5.73s/it]0% (28/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:29 INFO    lightkurve.utils: 0% (28/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:29 INFO    transit_hunter.data.fetch: fetched TIC 159346490 (TESS SPOC): 34089 points, 2 segments
+download TESS:  13%|█▎        | 18/140 [01:59<08:20,  4.10s/it]8% (1385/18276) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:35 INFO    lightkurve.utils: 8% (1385/18276) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:35 INFO    transit_hunter.data.fetch: fetched TIC 160708862 (TESS SPOC): 30499 points, 2 segments
+download TESS:  14%|█▎        | 19/140 [02:04<09:06,  4.51s/it]1% (191/18361) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:39 INFO    lightkurve.utils: 1% (191/18361) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (189/18361) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:42 INFO    lightkurve.utils: 1% (189/18361) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+Warning: 30% (5872/19412) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:44 WARNING lightkurve.utils: Warning: 30% (5872/19412) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:44 INFO    transit_hunter.data.fetch: fetched TIC 164681172 (TESS SPOC): 12838 points, 1 segments
+download TESS:  14%|█▍        | 20/140 [02:13<11:41,  5.84s/it]0% (12/10741) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:48 INFO    lightkurve.utils: 0% (12/10741) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+2% (323/17300) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:48 INFO    lightkurve.utils: 2% (323/17300) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:48 INFO    transit_hunter.data.fetch: fetched TIC 166145361 (TESS SPOC): 31027 points, 2 segments
+download TESS:  15%|█▌        | 21/140 [02:18<10:52,  5.48s/it]2% (390/17300) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:49 INFO    lightkurve.utils: 2% (390/17300) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:49 INFO    transit_hunter.data.fetch: fetched TIC 166527623 (TESS SPOC): 31447 points, 2 segments
+download TESS:  16%|█▌        | 22/140 [02:18<07:49,  3.98s/it]0% (29/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:50 INFO    lightkurve.utils: 0% (29/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (54/18462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:50 INFO    lightkurve.utils: 0% (54/18462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (12/11207) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:53 INFO    lightkurve.utils: 0% (12/11207) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:54 INFO    transit_hunter.data.fetch: fetched TIC 1717732429 (TESS QLP): 21924 points, 2 segments
+download TESS:  16%|█▋        | 23/140 [02:23<08:15,  4.23s/it]0% (13/11076) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:15:55 INFO    lightkurve.utils: 0% (13/11076) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (12/10778) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:04 INFO    lightkurve.utils: 0% (12/10778) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:04 INFO    transit_hunter.data.fetch: fetched TIC 172376068 (TESS QLP): 21829 points, 2 segments
+download TESS:  17%|█▋        | 24/140 [02:34<11:52,  6.15s/it]1% (181/17511) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:05 INFO    lightkurve.utils: 1% (181/17511) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:05 INFO    transit_hunter.data.fetch: fetched TIC 167092385 (TESS SPOC): 35467 points, 2 segments
+download TESS:  18%|█▊        | 25/140 [02:35<09:00,  4.70s/it]7% (1314/18197) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:06 INFO    lightkurve.utils: 7% (1314/18197) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (28/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:09 INFO    lightkurve.utils: 0% (28/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:09 INFO    transit_hunter.data.fetch: fetched TIC 169176556 (TESS SPOC): 36546 points, 2 segments
+download TESS:  19%|█▊        | 26/140 [02:39<08:15,  4.35s/it]0% (73/16416) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:12 INFO    lightkurve.utils: 0% (73/16416) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:12 INFO    transit_hunter.data.fetch: fetched TIC 178051504 (TESS SPOC): 16305 points, 1 segments
+download TESS:  19%|█▉        | 27/140 [02:42<07:36,  4.04s/it]0% (12/11730) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:21 INFO    lightkurve.utils: 0% (12/11730) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+4% (843/18934) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:22 INFO    lightkurve.utils: 4% (843/18934) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:22 INFO    transit_hunter.data.fetch: fetched TIC 178889597 (TESS SPOC): 32814 points, 2 segments
+download TESS:  20%|██        | 28/140 [02:52<10:37,  5.69s/it]2% (386/18655) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:24 INFO    lightkurve.utils: 2% (386/18655) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+2% (319/17713) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:24 INFO    lightkurve.utils: 2% (319/17713) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (13/11425) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:27 INFO    lightkurve.utils: 0% (13/11425) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:27 INFO    transit_hunter.data.fetch: fetched TIC 185482513 (TESS QLP): 23130 points, 2 segments
+download TESS:  21%|██        | 29/140 [02:57<10:12,  5.52s/it]2% (362/18627) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:31 INFO    lightkurve.utils: 2% (362/18627) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:31 INFO    transit_hunter.data.fetch: fetched TIC 181150051 (TESS SPOC): 34514 points, 2 segments
+download TESS:  21%|██▏       | 30/140 [03:00<09:04,  4.95s/it]0% (36/19510) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:35 INFO    lightkurve.utils: 0% (36/19510) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+7% (1340/18183) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:37 INFO    lightkurve.utils: 7% (1340/18183) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (127/18034) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:39 INFO    lightkurve.utils: 1% (127/18034) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:39 INFO    transit_hunter.data.fetch: fetched TIC 179244391 (TESS SPOC): 30501 points, 2 segments
+download TESS:  22%|██▏       | 31/140 [03:09<10:59,  6.05s/it]7% (1337/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:45 INFO    lightkurve.utils: 7% (1337/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:45 INFO    transit_hunter.data.fetch: fetched TIC 192587088 (TESS SPOC): 32020 points, 2 segments
+download TESS:  23%|██▎       | 32/140 [03:14<10:38,  5.91s/it]20% (3639/18307) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:51 INFO    lightkurve.utils: 20% (3639/18307) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+15% (2695/17674) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:51 INFO    lightkurve.utils: 15% (2695/17674) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:51 INFO    transit_hunter.data.fetch: fetched TIC 188593930 (TESS SPOC): 24265 points, 2 segments
+download TESS:  24%|██▎       | 33/140 [03:21<10:44,  6.02s/it]1% (97/17861) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:56 INFO    lightkurve.utils: 1% (97/17861) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+7% (1352/18070) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:16:58 INFO    lightkurve.utils: 7% (1352/18070) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+17% (3387/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:01 INFO    lightkurve.utils: 17% (3387/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:01 INFO    transit_hunter.data.fetch: fetched TIC 215258019 (TESS SPOC): 26646 points, 2 segments
+download TESS:  24%|██▍       | 34/140 [03:31<12:39,  7.16s/it]3% (539/19292) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:04 INFO    lightkurve.utils: 3% (539/19292) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (117/19550) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:06 INFO    lightkurve.utils: 1% (117/19550) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:06 INFO    transit_hunter.data.fetch: fetched TIC 218795833 (TESS SPOC): 33255 points, 2 segments
+download TESS:  25%|██▌       | 35/140 [03:36<11:34,  6.62s/it]7% (1324/18225) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:08 INFO    lightkurve.utils: 7% (1324/18225) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+5% (873/18680) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:10 INFO    lightkurve.utils: 5% (873/18680) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:10 INFO    transit_hunter.data.fetch: fetched TIC 198382308 (TESS SPOC): 23796 points, 2 segments
+download TESS:  26%|██▌       | 36/140 [03:40<10:05,  5.82s/it]8% (1363/17839) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:15 INFO    lightkurve.utils: 8% (1363/17839) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:15 INFO    transit_hunter.data.fetch: fetched TIC 200593988 (TESS SPOC): 27546 points, 2 segments
+download TESS:  26%|██▋       | 37/140 [03:45<09:26,  5.50s/it]2% (313/18627) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:16 INFO    lightkurve.utils: 2% (313/18627) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:16 INFO    transit_hunter.data.fetch: fetched TIC 219187649 (TESS SPOC): 31627 points, 2 segments
+download TESS:  27%|██▋       | 38/140 [03:46<06:59,  4.11s/it]5% (985/19261) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:20 INFO    lightkurve.utils: 5% (985/19261) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (175/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:24 INFO    lightkurve.utils: 1% (175/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+9% (1833/19402) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:26 INFO    lightkurve.utils: 9% (1833/19402) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:26 INFO    transit_hunter.data.fetch: fetched TIC 219338651 (TESS SPOC): 32145 points, 2 segments
+download TESS:  28%|██▊       | 39/140 [03:56<10:10,  6.05s/it]0% (86/17457) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:27 INFO    lightkurve.utils: 0% (86/17457) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+5% (875/18680) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:31 INFO    lightkurve.utils: 5% (875/18680) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:31 INFO    transit_hunter.data.fetch: fetched TIC 219751469 (TESS SPOC): 26032 points, 2 segments
+download TESS:  29%|██▊       | 40/140 [04:00<09:10,  5.51s/it]0% (24/22988) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:32 INFO    lightkurve.utils: 0% (24/22988) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (42/18535) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:35 INFO    lightkurve.utils: 0% (42/18535) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:35 INFO    transit_hunter.data.fetch: fetched TIC 219208037 (TESS SPOC): 33596 points, 2 segments
+download TESS:  29%|██▉       | 41/140 [04:04<08:19,  5.05s/it]1% (428/38316) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:40 INFO    lightkurve.utils: 1% (428/38316) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (177/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:42 INFO    lightkurve.utils: 1% (177/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (27/24165) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:44 INFO    lightkurve.utils: 0% (27/24165) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:44 INFO    transit_hunter.data.fetch: fetched TIC 220436159 (TESS QLP): 47102 points, 2 segments
+download TESS:  30%|███       | 42/140 [04:13<10:16,  6.29s/it]5% (984/19261) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:45 INFO    lightkurve.utils: 5% (984/19261) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+5% (873/18680) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:50 INFO    lightkurve.utils: 5% (873/18680) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:50 INFO    transit_hunter.data.fetch: fetched TIC 229687624 (TESS SPOC): 23757 points, 2 segments
+download TESS:  31%|███       | 43/140 [04:20<10:03,  6.23s/it]0% (122/40278) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:52 INFO    lightkurve.utils: 0% (122/40278) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:53 INFO    transit_hunter.data.fetch: fetched TIC 220414682 (TESS SPOC): 57291 points, 2 segments
+download TESS:  31%|███▏      | 44/140 [04:22<08:14,  5.16s/it]0% (10/3495) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:54 INFO    lightkurve.utils: 0% (10/3495) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (31/17336) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:55 INFO    lightkurve.utils: 0% (31/17336) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+9% (1832/19402) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:58 INFO    lightkurve.utils: 9% (1832/19402) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:58 INFO    transit_hunter.data.fetch: fetched TIC 231714759 (TESS SPOC): 32618 points, 2 segments
+download TESS:  32%|███▏      | 45/140 [04:28<08:30,  5.37s/it]1% (181/17511) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:59 INFO    lightkurve.utils: 1% (181/17511) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (12/11350) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:59 INFO    lightkurve.utils: 0% (12/11350) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:17:59 INFO    transit_hunter.data.fetch: fetched TIC 234009062 (TESS QLP): 14806 points, 2 segments
+download TESS:  33%|███▎      | 46/140 [04:29<06:09,  3.93s/it]0% (29/18909) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:01 INFO    lightkurve.utils: 0% (29/18909) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:01 INFO    transit_hunter.data.fetch: fetched TIC 232679662 (TESS SPOC): 34082 points, 2 segments
+download TESS:  34%|███▎      | 47/140 [04:31<05:21,  3.45s/it]7% (1352/18070) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:07 INFO    lightkurve.utils: 7% (1352/18070) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:07 INFO    transit_hunter.data.fetch: fetched TIC 233953967 (TESS SPOC): 34048 points, 2 segments
+download TESS:  34%|███▍      | 48/140 [04:37<06:26,  4.20s/it]1% (138/18035) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:15 INFO    lightkurve.utils: 1% (138/18035) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (173/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:15 INFO    lightkurve.utils: 1% (173/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (117/19550) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:18 INFO    lightkurve.utils: 1% (117/19550) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (41/18597) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:19 INFO    lightkurve.utils: 0% (41/18597) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (28/18909) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:21 INFO    lightkurve.utils: 0% (28/18909) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:21 INFO    transit_hunter.data.fetch: fetched TIC 239290086 (TESS SPOC): 36778 points, 2 segments
+download TESS:  35%|███▌      | 49/140 [04:51<10:42,  7.06s/it]5% (886/18680) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:22 INFO    lightkurve.utils: 5% (886/18680) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:22 INFO    transit_hunter.data.fetch: fetched TIC 237290473 (TESS SPOC): 23732 points, 2 segments
+download TESS:  36%|███▌      | 50/140 [04:52<07:49,  5.21s/it]0% (37/20294) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:27 INFO    lightkurve.utils: 0% (37/20294) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:27 INFO    transit_hunter.data.fetch: fetched TIC 238374636 (TESS SPOC): 36363 points, 2 segments
+download TESS:  36%|███▋      | 51/140 [04:56<07:31,  5.07s/it]3% (480/17888) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:33 INFO    lightkurve.utils: 3% (480/17888) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+8% (1392/18276) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:38 INFO    lightkurve.utils: 8% (1392/18276) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+16% (3178/19536) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:40 INFO    lightkurve.utils: 16% (3178/19536) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+5% (922/18225) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:43 INFO    lightkurve.utils: 5% (922/18225) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:43 INFO    transit_hunter.data.fetch: fetched TIC 245947683 (TESS SPOC): 31078 points, 2 segments
+download TESS:  37%|███▋      | 52/140 [05:12<12:14,  8.35s/it]0% (52/18462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:43 INFO    lightkurve.utils: 0% (52/18462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:43 INFO    transit_hunter.data.fetch: fetched TIC 237158650 (TESS SPOC): 34471 points, 2 segments
+download TESS:  38%|███▊      | 53/140 [05:13<08:48,  6.07s/it]1% (221/17300) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:45 INFO    lightkurve.utils: 1% (221/17300) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+8% (1458/18170) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:48 INFO    lightkurve.utils: 8% (1458/18170) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:48 INFO    transit_hunter.data.fetch: fetched TIC 254003502 (TESS SPOC): 29465 points, 2 segments
+download TESS:  39%|███▊      | 54/140 [05:17<07:56,  5.54s/it]8% (1384/18276) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:52 INFO    lightkurve.utils: 8% (1384/18276) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:52 INFO    transit_hunter.data.fetch: fetched TIC 250306572 (TESS SPOC): 30988 points, 2 segments
+download TESS:  39%|███▉      | 55/140 [05:22<07:30,  5.30s/it]5% (846/18714) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:56 INFO    lightkurve.utils: 5% (846/18714) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:56 INFO    transit_hunter.data.fetch: fetched TIC 247180220 (TESS SPOC): 31973 points, 2 segments
+download TESS:  40%|████      | 56/140 [05:26<06:42,  4.80s/it]3% (451/17713) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:18:59 INFO    lightkurve.utils: 3% (451/17713) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (15/11142) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:00 INFO    lightkurve.utils: 0% (15/11142) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:00 INFO    transit_hunter.data.fetch: fetched TIC 274002141 (TESS QLP): 11127 points, 1 segments
+download TESS:  41%|████      | 57/140 [05:30<06:28,  4.68s/it]8% (1658/20262) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:01 INFO    lightkurve.utils: 8% (1658/20262) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+7% (1378/18714) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:05 INFO    lightkurve.utils: 7% (1378/18714) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+2% (359/18034) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:10 INFO    lightkurve.utils: 2% (359/18034) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:10 INFO    transit_hunter.data.fetch: fetched TIC 260271203 (TESS SPOC): 29205 points, 2 segments
+download TESS:  41%|████▏     | 58/140 [05:40<08:32,  6.25s/it]3% (513/19402) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:14 INFO    lightkurve.utils: 3% (513/19402) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:14 INFO    transit_hunter.data.fetch: fetched TIC 263078276 (TESS SPOC): 30339 points, 2 segments
+download TESS:  42%|████▏     | 59/140 [05:44<07:31,  5.57s/it]0% (52/18462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:15 INFO    lightkurve.utils: 0% (52/18462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+3% (365/14409) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:18 INFO    lightkurve.utils: 3% (365/14409) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:19 WARNING transit_hunter.data.fetch: MAST download TIC 274602479 failed (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))); retry 1/3 in 5s
+6% (1049/18539) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:23 INFO    lightkurve.utils: 6% (1049/18539) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+Warning: 22% (4109/18307) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:24 WARNING lightkurve.utils: Warning: 22% (4109/18307) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:24 INFO    transit_hunter.data.fetch: fetched TIC 262530407 (TESS SPOC): 28543 points, 2 segments
+download TESS:  43%|████▎     | 60/140 [05:54<09:05,  6.82s/it]3% (365/14409) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:24 INFO    lightkurve.utils: 3% (365/14409) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (28/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:24 INFO    lightkurve.utils: 0% (28/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:24 INFO    transit_hunter.data.fetch: fetched TIC 274122380 (TESS SPOC): 36548 points, 2 segments
+download TESS:  44%|████▎     | 61/140 [05:54<06:22,  4.84s/it]8% (1656/20262) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:29 INFO    lightkurve.utils: 8% (1656/20262) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+12% (2074/17327) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:31 INFO    lightkurve.utils: 12% (2074/17327) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:31 INFO    transit_hunter.data.fetch: fetched TIC 274602479 (TESS SPOC): 25651 points, 2 segments
+download TESS:  44%|████▍     | 62/140 [06:01<07:02,  5.42s/it]0% (29/17839) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:31 INFO    lightkurve.utils: 0% (29/17839) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:31 INFO    transit_hunter.data.fetch: fetched TIC 277871306 (TESS SPOC): 30343 points, 2 segments
+3% (480/17888) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:37 INFO    lightkurve.utils: 3% (480/17888) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (253/19536) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:38 INFO    lightkurve.utils: 1% (253/19536) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:38 INFO    transit_hunter.data.fetch: fetched TIC 280685089 (TESS SPOC): 30351 points, 2 segments
+download TESS:  46%|████▌     | 64/140 [06:08<05:43,  4.52s/it]6% (1094/18225) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:43 INFO    lightkurve.utils: 6% (1094/18225) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:44 INFO    transit_hunter.data.fetch: fetched TIC 283677584 (TESS SPOC): 30946 points, 2 segments
+download TESS:  46%|████▋     | 65/140 [06:13<05:57,  4.77s/it]4% (693/18539) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:44 INFO    lightkurve.utils: 4% (693/18539) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+2% (330/19631) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:52 INFO    lightkurve.utils: 2% (330/19631) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (9/10379) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:53 INFO    lightkurve.utils: 0% (9/10379) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (35/19510) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:53 INFO    lightkurve.utils: 0% (35/19510) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (12/10964) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:59 INFO    lightkurve.utils: 0% (12/10964) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:59 INFO    transit_hunter.data.fetch: fetched TIC 290348382 (TESS QLP): 20878 points, 2 segments
+download TESS:  47%|████▋     | 66/140 [06:29<09:22,  7.60s/it]0% (19/19292) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:19:59 INFO    lightkurve.utils: 0% (19/19292) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+4% (675/17839) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:03 INFO    lightkurve.utils: 4% (675/17839) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:03 INFO    transit_hunter.data.fetch: fetched TIC 286712787 (TESS SPOC): 31890 points, 2 segments
+download TESS:  48%|████▊     | 67/140 [06:33<08:03,  6.63s/it]2% (278/17300) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:04 INFO    lightkurve.utils: 2% (278/17300) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:04 INFO    transit_hunter.data.fetch: fetched TIC 289445553 (TESS SPOC): 33649 points, 2 segments
+download TESS:  49%|████▊     | 68/140 [06:34<05:59,  4.99s/it]2% (373/19811) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:04 INFO    lightkurve.utils: 2% (373/19811) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+6% (1118/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:10 INFO    lightkurve.utils: 6% (1118/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:10 INFO    transit_hunter.data.fetch: fetched TIC 285666479 (TESS SPOC): 31892 points, 2 segments
+download TESS:  49%|████▉     | 69/140 [06:39<06:08,  5.19s/it]17% (555/3353) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:12 INFO    lightkurve.utils: 17% (555/3353) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+2% (284/18412) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:13 INFO    lightkurve.utils: 2% (284/18412) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:13 INFO    transit_hunter.data.fetch: fetched TIC 287776397 (TESS SPOC): 33948 points, 2 segments
+download TESS:  50%|█████     | 70/140 [06:43<05:35,  4.79s/it]0% (29/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:18 INFO    lightkurve.utils: 0% (29/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (34/10837) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:19 INFO    lightkurve.utils: 0% (34/10837) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:19 INFO    transit_hunter.data.fetch: fetched TIC 296882354 (TESS TESS-SPOC): 12039 points, 2 segments
+download TESS:  51%|█████     | 71/140 [06:49<05:49,  5.07s/it]7% (1218/18197) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:21 INFO    lightkurve.utils: 7% (1218/18197) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (181/17511) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:23 INFO    lightkurve.utils: 1% (181/17511) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:23 INFO    transit_hunter.data.fetch: fetched TIC 296898634 (TESS SPOC): 35467 points, 2 segments
+download TESS:  51%|█████▏    | 72/140 [06:53<05:24,  4.77s/it]2% (358/18921) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:26 INFO    lightkurve.utils: 2% (358/18921) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (116/19631) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:34 INFO    lightkurve.utils: 1% (116/19631) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+2% (298/18655) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:36 INFO    lightkurve.utils: 2% (298/18655) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:36 INFO    transit_hunter.data.fetch: fetched TIC 29914747 (TESS SPOC): 33484 points, 2 segments
+download TESS:  52%|█████▏    | 73/140 [07:06<07:59,  7.16s/it]0% (61/17305) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:36 INFO    lightkurve.utils: 0% (61/17305) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:36 INFO    transit_hunter.data.fetch: fetched TIC 301051430 (TESS SPOC): 33533 points, 2 segments
+download TESS:  53%|█████▎    | 74/140 [07:06<05:35,  5.08s/it]8% (1660/20262) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:37 INFO    lightkurve.utils: 8% (1660/20262) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (16/3879) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:37 INFO    lightkurve.utils: 0% (16/3879) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:37 INFO    transit_hunter.data.fetch: fetched TIC 293151358 (TESS SPOC): 34039 points, 2 segments
+download TESS:  54%|█████▎    | 75/140 [07:07<04:12,  3.89s/it]0% (19/19292) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:42 INFO    lightkurve.utils: 0% (19/19292) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:42 INFO    transit_hunter.data.fetch: fetched TIC 304025075 (TESS SPOC): 34122 points, 2 segments
+download TESS:  54%|█████▍    | 76/140 [07:12<04:23,  4.11s/it]Warning: 20% (3681/18307) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:47 WARNING lightkurve.utils: Warning: 20% (3681/18307) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+8% (1014/12154) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:47 INFO    lightkurve.utils: 8% (1014/12154) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:47 INFO    transit_hunter.data.fetch: fetched TIC 311890977 (TESS TESS-SPOC): 11023 points, 2 segments
+download TESS:  55%|█████▌    | 77/140 [07:16<04:30,  4.29s/it]0% (37/19510) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:51 INFO    lightkurve.utils: 0% (37/19510) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+17% (3370/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:54 INFO    lightkurve.utils: 17% (3370/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:54 INFO    transit_hunter.data.fetch: fetched TIC 305048087 (TESS SPOC): 26716 points, 2 segments
+download TESS:  56%|█████▌    | 78/140 [07:24<05:21,  5.19s/it]0% (43/10505) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:20:55 INFO    lightkurve.utils: 0% (43/10505) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+20% (3607/18307) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:01 INFO    lightkurve.utils: 20% (3607/18307) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+3% (286/10841) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:02 INFO    lightkurve.utils: 3% (286/10841) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:02 INFO    transit_hunter.data.fetch: fetched TIC 316402246 (TESS TESS-SPOC): 20010 points, 2 segments
+download TESS:  56%|█████▋    | 79/140 [07:31<06:00,  5.91s/it]0% (121/40278) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:08 INFO    lightkurve.utils: 0% (121/40278) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+2% (434/18462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:08 INFO    lightkurve.utils: 2% (434/18462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:08 INFO    transit_hunter.data.fetch: fetched TIC 326347927 (TESS SPOC): 12967 points, 1 segments
+download TESS:  57%|█████▋    | 80/140 [07:38<06:07,  6.13s/it]0% (30/12904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:11 INFO    lightkurve.utils: 0% (30/12904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+7% (1480/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:15 INFO    lightkurve.utils: 7% (1480/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:15 INFO    transit_hunter.data.fetch: fetched TIC 317483660 (TESS SPOC): 43049 points, 2 segments
+download TESS:  58%|█████▊    | 81/140 [07:44<06:07,  6.23s/it]0% (18/18009) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:19 INFO    lightkurve.utils: 0% (18/18009) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+3% (470/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:20 INFO    lightkurve.utils: 3% (470/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:20 INFO    transit_hunter.data.fetch: fetched TIC 312678993 (TESS SPOC): 31537 points, 2 segments
+download TESS:  59%|█████▊    | 82/140 [07:49<05:42,  5.90s/it]17% (3339/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:24 INFO    lightkurve.utils: 17% (3339/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:24 INFO    transit_hunter.data.fetch: fetched TIC 321068176 (TESS SPOC): 26298 points, 2 segments
+download TESS:  59%|█████▉    | 83/140 [07:53<05:03,  5.32s/it]3% (584/17888) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:28 INFO    lightkurve.utils: 3% (584/17888) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:28 INFO    transit_hunter.data.fetch: fetched TIC 336767770 (TESS SPOC): 32815 points, 2 segments
+download TESS:  60%|██████    | 84/140 [07:57<04:35,  4.93s/it]1% (181/17511) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:29 INFO    lightkurve.utils: 1% (181/17511) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:29 INFO    transit_hunter.data.fetch: fetched TIC 331034236 (TESS SPOC): 30204 points, 2 segments
+download TESS:  61%|██████    | 85/140 [07:59<03:32,  3.86s/it]8% (1657/20262) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:30 INFO    lightkurve.utils: 8% (1657/20262) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (31/11704) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:31 INFO    lightkurve.utils: 0% (31/11704) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+3% (286/10841) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:37 INFO    lightkurve.utils: 3% (286/10841) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+4% (403/10741) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:38 INFO    lightkurve.utils: 4% (403/10741) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:38 INFO    transit_hunter.data.fetch: fetched TIC 348135793 (TESS TESS-SPOC): 19041 points, 2 segments
+download TESS:  61%|██████▏   | 86/140 [08:08<04:53,  5.43s/it]5% (940/18412) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:41 INFO    lightkurve.utils: 5% (940/18412) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:41 INFO    transit_hunter.data.fetch: fetched TIC 341805908 (TESS SPOC): 29996 points, 2 segments
+download TESS:  62%|██████▏   | 87/140 [08:11<04:05,  4.63s/it]11% (1880/17327) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:44 INFO    lightkurve.utils: 11% (1880/17327) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+11% (1985/17327) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:44 INFO    lightkurve.utils: 11% (1985/17327) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (155/10741) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:48 INFO    lightkurve.utils: 1% (155/10741) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:48 INFO    transit_hunter.data.fetch: fetched TIC 354600221 (TESS TESS-SPOC): 17765 points, 2 segments
+download TESS:  63%|██████▎   | 88/140 [08:18<04:42,  5.42s/it]14% (2561/18680) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:50 INFO    lightkurve.utils: 14% (2561/18680) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:50 INFO    transit_hunter.data.fetch: fetched TIC 366311757 (TESS SPOC): 23544 points, 2 segments
+download TESS:  64%|██████▎   | 89/140 [08:20<03:44,  4.41s/it]7% (1476/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:56 INFO    lightkurve.utils: 7% (1476/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (191/18412) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:57 INFO    lightkurve.utils: 1% (191/18412) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:57 INFO    transit_hunter.data.fetch: fetched TIC 360816293 (TESS SPOC): 15641 points, 1 segments
+download TESS:  64%|██████▍   | 90/140 [08:27<04:21,  5.23s/it]0% (28/12703) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:21:58 INFO    lightkurve.utils: 0% (28/12703) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+4% (667/18475) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:02 INFO    lightkurve.utils: 4% (667/18475) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:02 INFO    transit_hunter.data.fetch: fetched TIC 37348844 (TESS SPOC): 26085 points, 2 segments
+download TESS:  65%|██████▌   | 91/140 [08:32<04:07,  5.06s/it]0% (29/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:06 INFO    lightkurve.utils: 0% (29/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+7% (1352/18070) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:06 INFO    lightkurve.utils: 7% (1352/18070) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+7% (1353/18070) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:13 INFO    lightkurve.utils: 7% (1353/18070) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:13 INFO    transit_hunter.data.fetch: fetched TIC 372264750 (TESS SPOC): 29392 points, 2 segments
+download TESS:  66%|██████▌   | 92/140 [08:43<05:32,  6.94s/it]1% (173/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:15 INFO    lightkurve.utils: 1% (173/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:15 INFO    transit_hunter.data.fetch: fetched TIC 375850439 (TESS SPOC): 31577 points, 2 segments
+download TESS:  66%|██████▋   | 93/140 [08:44<04:04,  5.20s/it]16% (3145/19536) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:16 INFO    lightkurve.utils: 16% (3145/19536) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+14% (2629/18680) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:17 INFO    lightkurve.utils: 14% (2629/18680) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:17 INFO    transit_hunter.data.fetch: fetched TIC 355640518 (TESS SPOC): 23449 points, 2 segments
+download TESS:  67%|██████▋   | 94/140 [08:47<03:20,  4.36s/it]1% (181/17511) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:17 INFO    lightkurve.utils: 1% (181/17511) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:17 INFO    transit_hunter.data.fetch: fetched TIC 373576942 (TESS SPOC): 34391 points, 2 segments
+download TESS:  68%|██████▊   | 95/140 [08:47<02:19,  3.09s/it]7% (1354/18070) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:20 INFO    lightkurve.utils: 7% (1354/18070) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+14% (2709/19462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:23 INFO    lightkurve.utils: 14% (2709/19462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:23 INFO    transit_hunter.data.fetch: fetched TIC 376168473 (TESS SPOC): 28221 points, 2 segments
+download TESS:  69%|██████▊   | 96/140 [08:53<02:59,  4.07s/it]0% (37/20294) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:31 INFO    lightkurve.utils: 0% (37/20294) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+6% (1064/18034) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:35 INFO    lightkurve.utils: 6% (1064/18034) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+3% (469/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:36 INFO    lightkurve.utils: 3% (469/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:36 INFO    transit_hunter.data.fetch: fetched TIC 378355116 (TESS SPOC): 29026 points, 2 segments
+download TESS:  69%|██████▉   | 97/140 [09:06<04:42,  6.56s/it]8% (1399/18197) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:40 INFO    lightkurve.utils: 8% (1399/18197) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+5% (984/19261) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:41 INFO    lightkurve.utils: 5% (984/19261) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (19/19292) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:44 INFO    lightkurve.utils: 0% (19/19292) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:44 INFO    transit_hunter.data.fetch: fetched TIC 386166904 (TESS SPOC): 39530 points, 2 segments
+download TESS:  70%|███████   | 98/140 [09:14<05:00,  7.17s/it]1% (427/38316) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:45 INFO    lightkurve.utils: 1% (427/38316) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+9% (1803/19402) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:53 INFO    lightkurve.utils: 9% (1803/19402) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:53 INFO    transit_hunter.data.fetch: fetched TIC 393978805 (TESS SPOC): 33033 points, 2 segments
+download TESS:  71%|███████   | 99/140 [09:23<05:10,  7.56s/it]0% (82/18934) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:53 INFO    lightkurve.utils: 0% (82/18934) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:53 INFO    transit_hunter.data.fetch: fetched TIC 398763011 (TESS SPOC): 34349 points, 2 segments
+download TESS:  71%|███████▏  | 100/140 [09:23<03:35,  5.39s/it]4% (1598/38316) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:54 INFO    lightkurve.utils: 4% (1598/38316) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:22:54 INFO    transit_hunter.data.fetch: fetched TIC 38467100 (TESS SPOC): 43967 points, 2 segments
+download TESS:  72%|███████▏  | 101/140 [09:24<02:39,  4.08s/it]0% (123/40278) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:03 INFO    lightkurve.utils: 0% (123/40278) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:04 INFO    transit_hunter.data.fetch: fetched TIC 38680052 (TESS SPOC): 56993 points, 2 segments
+download TESS:  73%|███████▎  | 102/140 [09:33<03:34,  5.66s/it]5% (172/3408) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:06 INFO    lightkurve.utils: 5% (172/3408) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+15% (2675/17674) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:07 INFO    lightkurve.utils: 15% (2675/17674) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+2% (398/17971) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:10 INFO    lightkurve.utils: 2% (398/17971) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+20% (3607/18307) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:11 INFO    lightkurve.utils: 20% (3607/18307) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (117/19550) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:14 INFO    lightkurve.utils: 1% (117/19550) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (96/18011) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:18 INFO    lightkurve.utils: 1% (96/18011) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:18 INFO    transit_hunter.data.fetch: fetched TIC 408159788 (TESS SPOC): 34347 points, 2 segments
+download TESS:  74%|███████▎  | 103/140 [09:48<05:09,  8.36s/it]7% (1475/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:19 INFO    lightkurve.utils: 7% (1475/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:19 INFO    transit_hunter.data.fetch: fetched TIC 401889117 (TESS SPOC): 27462 points, 2 segments
+download TESS:  74%|███████▍  | 104/140 [09:49<03:40,  6.12s/it]0% (18/10730) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:23 INFO    lightkurve.utils: 0% (18/10730) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:23 INFO    transit_hunter.data.fetch: fetched TIC 408506314 (TESS TESS-SPOC): 11498 points, 2 segments
+download TESS:  75%|███████▌  | 105/140 [09:53<03:13,  5.53s/it]3% (512/17888) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:26 INFO    lightkurve.utils: 3% (512/17888) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:26 INFO    transit_hunter.data.fetch: fetched TIC 404243877 (TESS SPOC): 22584 points, 2 segments
+download TESS:  76%|███████▌  | 106/140 [09:56<02:38,  4.65s/it]0% (29/17327) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:27 INFO    lightkurve.utils: 0% (29/17327) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+4% (666/18475) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:30 INFO    lightkurve.utils: 4% (666/18475) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:30 INFO    transit_hunter.data.fetch: fetched TIC 415276070 (TESS SPOC): 32487 points, 2 segments
+download TESS:  76%|███████▋  | 107/140 [10:00<02:30,  4.57s/it]0% (42/18064) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:31 INFO    lightkurve.utils: 0% (42/18064) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (23/19091) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:34 INFO    lightkurve.utils: 0% (23/19091) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:34 INFO    transit_hunter.data.fetch: fetched TIC 420757505 (TESS SPOC): 31273 points, 2 segments
+download TESS:  77%|███████▋  | 108/140 [10:04<02:21,  4.41s/it]0% (28/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:38 INFO    lightkurve.utils: 0% (28/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:39 WARNING transit_hunter.data.fetch: MAST download TIC 424699834 failed (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))); retry 1/3 in 5s
+0% (47/20294) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:40 INFO    lightkurve.utils: 0% (47/20294) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:40 INFO    transit_hunter.data.fetch: fetched TIC 423279462 (TESS SPOC): 36311 points, 2 segments
+download TESS:  78%|███████▊  | 109/140 [10:09<02:26,  4.72s/it]0% (28/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:43 INFO    lightkurve.utils: 0% (28/18166) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (37/20294) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:44 INFO    lightkurve.utils: 0% (37/20294) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (40/18064) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:49 INFO    lightkurve.utils: 0% (40/18064) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+7% (1289/18225) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:51 INFO    lightkurve.utils: 7% (1289/18225) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (19/19292) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:52 INFO    lightkurve.utils: 0% (19/19292) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:52 INFO    transit_hunter.data.fetch: fetched TIC 437560683 (TESS SPOC): 39530 points, 2 segments
+download TESS:  79%|███████▊  | 110/140 [10:21<03:26,  6.89s/it]1% (181/17511) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:58 INFO    lightkurve.utils: 1% (181/17511) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:58 INFO    transit_hunter.data.fetch: fetched TIC 424699834 (TESS SPOC): 34999 points, 2 segments
+download TESS:  79%|███████▉  | 111/140 [10:27<03:12,  6.64s/it]8% (1507/18070) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:58 INFO    lightkurve.utils: 8% (1507/18070) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:23:58 INFO    transit_hunter.data.fetch: fetched TIC 440636649 (TESS SPOC): 14672 points, 1 segments
+11% (4042/38316) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:06 INFO    lightkurve.utils: 11% (4042/38316) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (29/18909) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:06 INFO    lightkurve.utils: 0% (29/18909) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:06 INFO    transit_hunter.data.fetch: fetched TIC 429414530 (TESS SPOC): 18880 points, 1 segments
+download TESS:  81%|████████  | 113/140 [10:36<02:30,  5.58s/it]2% (398/17971) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:11 INFO    lightkurve.utils: 2% (398/17971) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:11 INFO    transit_hunter.data.fetch: fetched TIC 450089997 (TESS SPOC): 17289 points, 1 segments
+download TESS:  81%|████████▏ | 114/140 [10:40<02:12,  5.08s/it]7% (1334/17839) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:11 INFO    lightkurve.utils: 7% (1334/17839) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:11 INFO    transit_hunter.data.fetch: fetched TIC 438490744 (TESS SPOC): 29739 points, 2 segments
+download TESS:  82%|████████▏ | 115/140 [10:41<01:39,  3.97s/it]0% (37/20294) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:16 INFO    lightkurve.utils: 0% (37/20294) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+16% (2959/18475) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:18 INFO    lightkurve.utils: 16% (2959/18475) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:18 INFO    transit_hunter.data.fetch: fetched TIC 441135051 (TESS SPOC): 42298 points, 2 segments
+download TESS:  83%|████████▎ | 116/140 [10:48<01:57,  4.89s/it]2% (299/18655) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:19 INFO    lightkurve.utils: 2% (299/18655) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:19 INFO    transit_hunter.data.fetch: fetched TIC 436802660 (TESS SPOC): 35270 points, 2 segments
+download TESS:  84%|████████▎ | 117/140 [10:49<01:28,  3.87s/it]0% (18/19292) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:23 INFO    lightkurve.utils: 0% (18/19292) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:24 INFO    transit_hunter.data.fetch: fetched TIC 462162963 (TESS SPOC): 19274 points, 1 segments
+download TESS:  84%|████████▍ | 118/140 [10:53<01:26,  3.92s/it]0% (52/17395) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:24 INFO    lightkurve.utils: 0% (52/17395) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (200/18807) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:28 INFO    lightkurve.utils: 1% (200/18807) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (26/17483) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:33 INFO    lightkurve.utils: 0% (26/17483) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:33 INFO    transit_hunter.data.fetch: fetched TIC 5109298 (TESS SPOC): 17400 points, 1 segments
+download TESS:  85%|████████▌ | 119/140 [11:03<01:57,  5.60s/it]6% (1173/19027) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:34 INFO    lightkurve.utils: 6% (1173/19027) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (53/17391) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:35 INFO    lightkurve.utils: 0% (53/17391) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:35 INFO    transit_hunter.data.fetch: fetched TIC 458857720 (TESS SPOC): 33695 points, 2 segments
+download TESS:  86%|████████▌ | 120/140 [11:04<01:27,  4.38s/it]1% (117/19550) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:41 INFO    lightkurve.utils: 1% (117/19550) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (37/20294) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:46 INFO    lightkurve.utils: 0% (37/20294) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:46 INFO    transit_hunter.data.fetch: fetched TIC 52936161 (TESS SPOC): 38036 points, 2 segments
+download TESS:  86%|████████▋ | 121/140 [11:16<02:04,  6.54s/it]13% (2395/18635) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:46 INFO    lightkurve.utils: 13% (2395/18635) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:46 INFO    transit_hunter.data.fetch: fetched TIC 459190726 (TESS SPOC): 29789 points, 2 segments
+9% (1705/19186) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:47 INFO    lightkurve.utils: 9% (1705/19186) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:47 INFO    transit_hunter.data.fetch: fetched TIC 4971740 (TESS SPOC): 32836 points, 2 segments
+download TESS:  88%|████████▊ | 123/140 [11:17<01:04,  3.80s/it]Warning: 21% (3854/18126) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:52 WARNING lightkurve.utils: Warning: 21% (3854/18126) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (54/17395) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:52 INFO    lightkurve.utils: 0% (54/17395) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:52 INFO    transit_hunter.data.fetch: fetched TIC 54044474 (TESS SPOC): 15515 points, 1 segments
+download TESS:  89%|████████▊ | 124/140 [11:22<01:05,  4.08s/it]4% (629/16640) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:58 INFO    lightkurve.utils: 4% (629/16640) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:24:58 INFO    transit_hunter.data.fetch: fetched TIC 61098812 (TESS SPOC): 21101 points, 2 segments
+download TESS:  89%|████████▉ | 125/140 [11:28<01:08,  4.56s/it]3% (40/1155) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:03 INFO    lightkurve.utils: 3% (40/1155) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:03 INFO    transit_hunter.data.fetch: fetched TIC 664915372 (TESS TESS-SPOC): 1103 points, 1 segments
+download TESS:  90%|█████████ | 126/140 [11:32<01:02,  4.49s/it]0% (18/19292) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:04 INFO    lightkurve.utils: 0% (18/19292) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:05 INFO    transit_hunter.data.fetch: fetched TIC 45465399 (TESS SPOC): 39134 points, 2 segments
+download TESS:  91%|█████████ | 127/140 [11:34<00:48,  3.76s/it]17% (3378/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:07 INFO    lightkurve.utils: 17% (3378/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (224/17300) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:08 INFO    lightkurve.utils: 1% (224/17300) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+7% (1325/18170) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:10 INFO    lightkurve.utils: 7% (1325/18170) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+Warning: 22% (4079/18307) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:12 WARNING lightkurve.utils: Warning: 22% (4079/18307) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+8% (1440/18276) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:16 INFO    lightkurve.utils: 8% (1440/18276) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:17 INFO    transit_hunter.data.fetch: fetched TIC 66620917 (TESS SPOC): 32049 points, 2 segments
+download TESS:  91%|█████████▏| 128/140 [11:46<01:13,  6.11s/it]4% (669/18475) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:17 INFO    lightkurve.utils: 4% (669/18475) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:17 INFO    transit_hunter.data.fetch: fetched TIC 65448527 (TESS SPOC): 25931 points, 2 segments
+download TESS:  92%|█████████▏| 129/140 [11:47<00:49,  4.47s/it]0% (27/12703) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:23 INFO    lightkurve.utils: 0% (27/12703) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+17% (3365/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:24 INFO    lightkurve.utils: 17% (3365/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:24 INFO    transit_hunter.data.fetch: fetched TIC 70785910 (TESS SPOC): 25439 points, 2 segments
+download TESS:  93%|█████████▎| 130/140 [11:54<00:52,  5.20s/it]5% (1009/18714) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:24 INFO    lightkurve.utils: 5% (1009/18714) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:24 INFO    transit_hunter.data.fetch: fetched TIC 6663331 (TESS SPOC): 31175 points, 2 segments
+download TESS:  94%|█████████▎| 131/140 [11:54<00:33,  3.70s/it]0% (25/19050) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:29 INFO    lightkurve.utils: 0% (25/19050) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+7% (1352/18070) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:30 INFO    lightkurve.utils: 7% (1352/18070) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+8% (1407/18225) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:32 INFO    lightkurve.utils: 8% (1407/18225) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+0% (19/19091) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:36 INFO    lightkurve.utils: 0% (19/19091) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:36 INFO    transit_hunter.data.fetch: fetched TIC 82598822 (TESS SPOC): 29354 points, 2 segments
+download TESS:  94%|█████████▍| 132/140 [12:06<00:49,  6.20s/it]1% (184/17511) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:38 INFO    lightkurve.utils: 1% (184/17511) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:38 INFO    transit_hunter.data.fetch: fetched TIC 84069091 (TESS SPOC): 36352 points, 2 segments
+download TESS:  95%|█████████▌| 133/140 [12:07<00:33,  4.78s/it]3% (470/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:41 INFO    lightkurve.utils: 3% (470/17904) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:41 INFO    transit_hunter.data.fetch: fetched TIC 83905462 (TESS SPOC): 28782 points, 2 segments
+download TESS:  96%|█████████▌| 134/140 [12:11<00:26,  4.50s/it]8% (1355/17839) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:44 INFO    lightkurve.utils: 8% (1355/17839) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:44 INFO    transit_hunter.data.fetch: fetched TIC 87044036 (TESS SPOC): 29860 points, 2 segments
+download TESS:  96%|█████████▋| 135/140 [12:14<00:19,  3.87s/it]7% (1266/18034) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:52 INFO    lightkurve.utils: 7% (1266/18034) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+6% (1154/19027) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:52 INFO    lightkurve.utils: 6% (1154/19027) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+8% (1415/18197) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:54 INFO    lightkurve.utils: 8% (1415/18197) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+1% (138/18035) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:25:54 INFO    lightkurve.utils: 1% (138/18035) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+9% (1701/19186) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:26:02 INFO    lightkurve.utils: 9% (1701/19186) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:26:02 INFO    transit_hunter.data.fetch: fetched TIC 9348006 (TESS SPOC): 32633 points, 2 segments
+download TESS:  97%|█████████▋| 136/140 [12:31<00:32,  8.03s/it]7% (1230/17713) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:26:02 INFO    lightkurve.utils: 7% (1230/17713) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+2% (381/18462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:26:04 INFO    lightkurve.utils: 2% (381/18462) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:26:04 INFO    transit_hunter.data.fetch: fetched TIC 90616971 (TESS SPOC): 30570 points, 2 segments
+download TESS:  98%|█████████▊| 137/140 [12:34<00:19,  6.37s/it]1% (150/18934) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:26:07 INFO    lightkurve.utils: 1% (150/18934) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:26:07 INFO    transit_hunter.data.fetch: fetched TIC 92902951 (TESS SPOC): 33953 points, 2 segments
+download TESS:  99%|█████████▊| 138/140 [12:36<00:10,  5.25s/it]17% (3366/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:26:07 INFO    lightkurve.utils: 17% (3366/20208) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:26:07 INFO    transit_hunter.data.fetch: fetched TIC 89502706 (TESS SPOC): 28139 points, 2 segments
+download TESS:  99%|█████████▉| 139/140 [12:37<00:03,  3.85s/it]Warning: 21% (3913/18307) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:26:10 WARNING lightkurve.utils: Warning: 21% (3913/18307) of the cadences will be ignored due to the quality mask (quality_bitmask=17087).
+18:26:10 INFO    transit_hunter.data.fetch: fetched TIC 97409519 (TESS SPOC): 27551 points, 2 segments
+download TESS: 100%|██████████| 140/140 [12:40<00:00,  3.58s/it]download TESS: 100%|██████████| 140/140 [12:40<00:00,  5.43s/it]
+18:26:10 INFO    transit_hunter.data.build: download finished: {'ok': 140}

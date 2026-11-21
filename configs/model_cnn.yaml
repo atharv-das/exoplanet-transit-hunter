@@ -1,0 +1,51 @@
+# Dual-branch 1D CNN (AstroNet-style; Shallue & Vanderburg 2018), sized for a small dataset.
+# Validated by transit_hunter.config.CNNConfig.
+seed: 42
+num_classes: 3
+
+global_branch:               # 201-bin full-phase view
+  channels: [16, 32, 64, 128]
+  kernel_size: 5
+  convs_per_block: 2
+  pool_size: 5
+  pool_stride: 2
+
+local_branch:                # 61-bin zoom on the transit
+  channels: [16, 32]
+  kernel_size: 5
+  convs_per_block: 2
+  pool_size: 7
+  pool_stride: 2
+
+scalar_features:             # names produced by transit_hunter.processing.features
+  - log_period
+  - log_duration
+  - log_depth
+  - snr
+  - odd_even_ratio
+  - secondary_depth_ratio
+  - is_tess                  # mission flag (Kepler = 0, TESS = 1)
+
+head:
+  hidden: [256, 128]
+  dropout: 0.3
+
+augment:
+  flip_prob: 0.5             # time reflection of the phase-folded views
+  noise_std: 0.02            # Gaussian noise on normalized views
+  max_shift_bins_global: 3
+  max_shift_bins_local: 1
+
+train:
+  batch_size: 64
+  epochs: 60
+  lr: 0.001
+  weight_decay: 0.0001
+  loss: weighted_ce          # weighted_ce | focal
+  focal_gamma: 2.0
+  early_stopping_metric: val_macro_pr_auc
+  patience: 8
+  num_workers: 0             # 0 is safest on laptops / macOS
+  device: cpu
+
+output_dir: models/cnn

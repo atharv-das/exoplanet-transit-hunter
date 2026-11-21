@@ -1,0 +1,89 @@
+# Data configuration: sources, preprocessing, search, views, splits.
+# Every field is validated by transit_hunter.config.DataConfig. Paths are relative to the repo root
+# unless absolute; TH_DATA_DIR in .env overrides the data root.
+version: 1
+
+paths:
+  raw: data/raw              # FITS files downloaded by lightkurve
+  interim: data/interim      # cleaned + detrended light curves (.npz per star)
+  processed: data/processed  # global/local views + features + labels
+  demo_cache: data/demo_cache
+
+sources:
+  kepler:
+    mission: Kepler
+    author: Kepler
+    exptime: 1800            # long cadence, seconds
+    flux_column: pdcsap_flux
+    quality_bitmask: default
+  tess:
+    mission: TESS
+    # Tried in order. SPOC 2-min first, then FFI-based products.
+    author_priority: [SPOC, TESS-SPOC, QLP]
+    exptime_priority: [120, 200, 600, 1800]
+    flux_column: pdcsap_flux
+    quality_bitmask: default
+
+labels:
+  # NASA Exoplanet Archive TAP table names. Verify with:
+  #   https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+top+5+*+from+cumulative&format=csv
+  kepler_koi_table: cumulative
+  tess_toi_table: toi
+  # TESS has no EB disposition in the TOI table, so EB labels come from the TESS Eclipsing Binary
+  # catalog (Prsa et al. 2022, 4584 EBs from 2-min data, sectors 1-26) on VizieR.
+  tess_eb_catalog: J/ApJS/258/16
+  tess_eb_table: tess-ebs          # table name inside the VizieR catalog
+  train_missions: [Kepler, TESS]   # missions whose labeled signals are used for training
+  tess_max_period_days: 13.0       # need >= 2 transits in a few 27-day sectors
+  classes: [PC, EB, FP]      # index order of the model output
+  # Disposition mapping rules are implemented in transit_hunter.data.labels.
+
+cleaning:
+  sigma_upper: 4.0           # clip upward outliers (flares, cosmic rays)
+  sigma_lower: null          # never clip downward: transits live there
+  min_points: 500            # reject light curves shorter than this after cleaning
+
+detrend:
+  method: biweight           # biweight | savgol
+  window_length_days: 1.0    # wotan window; should be ~3x the longest expected transit duration
+  edge_cutoff_days: 0.0
+  break_tolerance_days: 0.5  # split segments at gaps longer than this
+  savgol_window_cadences: 101  # used only when method == savgol (must be odd)
+  savgol_polyorder: 2
+
+search:
+  method: bls                # bls | tls (tls is a stretch goal)
+  engine: numba              # numba (parallel, fast) | astropy (reference implementation)
+  period_min_days: 0.5
+  period_max_days: 100.0     # capped at runtime to baseline / min_transits
+  min_transits: 2
+  durations_days: [0.04, 0.06, 0.08, 0.12, 0.16, 0.25]
+  period_oversample: 3.0     # period-grid density: transit-time drift over the baseline <= duration / this
+  max_periods: 250000        # hard cap on grid size (grid is thinned uniformly in log-period beyond this)
+  phase_bins_per_duration: 4 # numba engine: phase-bin width = shortest duration / this
+  bin_minutes: 30.0          # bin before BLS for speed (TESS 2-min -> 30-min)
+  objective: likelihood      # astropy engine only: likelihood | snr
+  snr_threshold: 7.1
+  max_candidates: 3          # iterative search depth (1 = MVP single search)
+
+views:
+  global_bins: 201
+  local_bins: 61
+  local_half_width_durations: 2.0   # local view spans +/- this many durations around t0
+  local_bin_width_durations: 0.16   # local bins overlap (AstroNet): width = this x duration
+
+split:
+  seed: 42
+  train_frac: 0.8
+  val_frac: 0.1
+  test_frac: 0.1
+  group_by: star             # never put the same star in two splits
+
+download:
+  limit: 800                 # default --limit for make data (Kepler stars)
+  tess_limit: 400            # TESS stars (class-balanced) when TESS is a training mission
+  tess_max_sectors: 2        # sectors downloaded per TESS training star (keeps downloads small)
+  workers: 8
+  timeout_s: 120
+  retries: 3
+  backoff_s: 5.0

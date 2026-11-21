@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Env
+.env
+
+# Data (keep folder skeleton)
+data/**
+!data/raw/
+!data/interim/
+!data/processed/
+!data/demo_cache/
+!data/demo_cache/*.json
+!data/**/.gitkeep
+
+# Models: ignore everything except the small final model + metrics
+models/**
+!models/.gitkeep
+!models/final/
+!models/final/**
+!models/metrics.json
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Streamlit / MLflow
+.streamlit/secrets.toml
+mlruns/

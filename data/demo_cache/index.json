@@ -1,0 +1,125 @@
+{
+  "targets": [
+    {
+      "slug": "kepler-10",
+      "title": "Kepler-10",
+      "query": "Kepler-10",
+      "target_id": "KIC 11904151",
+      "mission": "Kepler",
+      "category": "small_multi",
+      "blurb": "First rocky planet found by Kepler (b, 0.84 d), plus a long-period sibling (c, 45 d).",
+      "predicted_class": "FP",
+      "confidence": 0.40525395831781347,
+      "author": "Kepler",
+      "segments": [
+        7,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        17
+      ],
+      "cached_at_utc": "2026-11-21T19:49:36+00:00"
+    },
+    {
+      "slug": "kepler-7",
+      "title": "Kepler-7",
+      "query": "Kepler-7",
+      "target_id": "KIC 5780885",
+      "mission": "Kepler",
+      "category": "hot_jupiter",
+      "blurb": "Puffy hot Jupiter on a 4.9-day orbit. A deep, clean, textbook transit.",
+      "predicted_class": "PC",
+      "confidence": 0.67195430295277,
+      "author": "Kepler",
+      "segments": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "cached_at_utc": "2026-11-21T19:50:04+00:00"
+    },
+    {
+      "slug": "wasp-18",
+      "title": "WASP-18 (TESS)",
+      "query": "WASP-18",
+      "target_id": "TIC 100100827",
+      "mission": "TESS",
+      "category": "hot_jupiter_tess",
+      "blurb": "Massive hot Jupiter on a 0.94-day orbit, seen by TESS (out of the Kepler training domain).",
+      "predicted_class": "PC",
+      "confidence": 0.6577610614470057,
+      "author": "SPOC",
+      "segments": [
+        105,
+        106
+      ],
+      "cached_at_utc": "2026-11-21T19:50:25+00:00"
+    },
+    {
+      "slug": "pi-mensae",
+      "title": "Pi Mensae (TESS)",
+      "query": "Pi Mensae",
+      "target_id": "TIC 261136679",
+      "mission": "TESS",
+      "category": "small_tess",
+      "blurb": "TESS's first announced planet, a super-Earth (6.3 d). A shallow, hard signal.",
+      "predicted_class": "PC",
+      "confidence": 0.9168984599145874,
+      "author": "SPOC",
+      "segments": [
+        93,
+        94,
+        95
+      ],
+      "cached_at_utc": "2026-11-21T19:51:22+00:00"
+    },
+    {
+      "slug": "kepler-eb",
+      "title": "Known eclipsing binary",
+      "query": "KIC 9101279",
+      "target_id": "KIC 9101279",
+      "mission": "Kepler",
+      "category": "eclipsing_binary",
+      "blurb": "Kepler false positive flagged as a stellar eclipse. Two stars, not a planet.",
+      "predicted_class": "EB",
+      "confidence": 0.9342147815047059,
+      "author": "Kepler",
+      "segments": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "cached_at_utc": "2026-11-21T19:51:28+00:00"
+    },
+    {
+      "slug": "kepler-noisy-fp",
+      "title": "Noisy false positive",
+      "query": "KIC 7877818",
+      "target_id": "KIC 7877818",
+      "mission": "Kepler",
+      "category": "false_positive",
+      "blurb": "Kepler signal rejected as not transit-like. Instrument noise, not an orbiting body.",
+      "predicted_class": "EB",
+      "confidence": 0.7980979034721796,
+      "author": "Kepler",
+      "segments": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "cached_at_utc": "2026-11-21T19:51:35+00:00"
+    }
+  ]
+}
